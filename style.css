@@ -1,0 +1,62 @@
+.desktop-1,
+.desktop-1 * {
+  box-sizing: border-box;
+}
+.desktop-1 {
+  background: var(--colors-primary, #03a9f4);
+  padding: 10px;
+  width: 100vw;
+  height: 982px;
+  position: relative;
+  overflow: hidden;
+}
+
+.center-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.rectangle-1 {
+  background: #000000;
+  border-radius: 12px;
+  width: 752px;
+  height: 428px;
+  position: absolute;
+  transform: translateX(-50%);
+  left: 0;
+  top: calc(50% - 214px);
+}
+.frame-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  transform: translateX(-50%);
+  left: 0;
+  top: calc(50% - 158px);
+}
+.image-1 {
+  flex-shrink: 0;
+  width: 648px;
+  height: 224px;
+  position: relative;
+}
+.click-to-load {
+  color: var(--colors-primary, #03a9f4);
+  text-align: center;
+  font: 400 48px "Nunito Sans", sans-serif;
+  position: relative;
+  align-self: stretch;
+}
+
+.zoom-out {
+  transform: scale(0.1);
+  opacity: 0;
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+/* This is the code for the landing page */
