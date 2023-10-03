@@ -8,6 +8,6 @@ function zoomOutAndRedirect() {
   desktop.classList.add("zoom-out");
 
   setTimeout(() => {
-    window.location.href = "checker.html";
+    window.location.href = "../pages/home.html";
   }, 500);
 }
