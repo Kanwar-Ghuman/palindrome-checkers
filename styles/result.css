@@ -1,0 +1,78 @@
+.breadcrumb {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+    border-radius: 6px;
+    font-family: "Inter-Medium", Helvetica;
+    font-size: small;
+  
+  }
+  
+  .breadcrumb .img {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    margin-top: 10px;
+    margin-right: 6px; 
+    margin-left:6px;
+  }
+  
+  .breadcrumb .link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .breadcrumb .text {
+    color: #9ca3af;
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: var(--text-sm-font-medium-font-family);
+    font-weight: var(--text-sm-font-medium-font-weight);
+    font-size: var(--text-sm-font-medium-font-size);
+    letter-spacing: var(--text-sm-font-medium-letter-spacing);
+    line-height: var(--text-sm-font-medium-line-height);
+    white-space: nowrap;
+    font-style: var(--text-sm-font-medium-font-style);
+    margin-top: 10px;
+  }
+  
+  .breadcrumb .text-wrapper {
+    color: #f3f4f6;
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: var(--text-sm-font-medium-font-family);
+    font-weight: var(--text-sm-font-medium-font-weight);
+    font-size: var(--text-sm-font-medium-font-size);
+    letter-spacing: var(--text-sm-font-medium-letter-spacing);
+    line-height: var(--text-sm-font-medium-line-height);
+    white-space: nowrap;
+    font-style: var(--text-sm-font-medium-font-style);
+    margin-top: 10px;
+  }
+  .navbar .img:first-child {
+    margin-left: 50px;  
+  }
+  .navbar a[href="history.html"] .link {
+    transform: translateX(-20px);  
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; 
+    margin-top:15px;
+  }
+  .navbar a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }

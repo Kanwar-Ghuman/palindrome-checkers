@@ -1,0 +1,77 @@
+.h1{
+    font-size:small;
+}
+
+
+
+.breadcrumb {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+    border-radius: 6px;
+    font-family: "Inter-Medium", Helvetica;
+  }
+  
+  .breadcrumb .img {
+    position: relative;
+    width: 18px;
+    height: 18px;
+  }
+  
+  .breadcrumb .link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .breadcrumb .text {
+    color: #9ca3af;
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: var(--text-sm-font-medium-font-family);
+    font-weight: var(--text-sm-font-medium-font-weight);
+    font-size: var(--text-sm-font-medium-font-size);
+    letter-spacing: var(--text-sm-font-medium-letter-spacing);
+    line-height: var(--text-sm-font-medium-line-height);
+    white-space: nowrap;
+    font-style: var(--text-sm-font-medium-font-style);
+  }
+  
+  .breadcrumb .text-wrapper {
+    color: #f3f4f6;
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: var(--text-sm-font-medium-font-family);
+    font-weight: var(--text-sm-font-medium-font-weight);
+    font-size: var(--text-sm-font-medium-font-size);
+    letter-spacing: var(--text-sm-font-medium-letter-spacing);
+    line-height: var(--text-sm-font-medium-line-height);
+    white-space: nowrap;
+    font-style: var(--text-sm-font-medium-font-style);
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; 
+  }
+  .navbar a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .is-palindrome {
+    color: green;
+}
+
+.not-palindrome {
+    color: red;
+}

@@ -6,10 +6,28 @@
     <title>Home - Checker</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="../styles/result.css" />
+    <link rel="stylesheet" href="../styles/home.css" />
   </head>
   <body>
-    <div class="container"></div>
-    <script src="../backend/main.js"></script>
+    <div class="navbar breadcrumb">
+      <div style="display: flex; align-items: center">
+        <a href="load.html">
+          <img class="img" src="../assets/home.svg" />
+          <div class="link"><div class="text">Home</div></div>
+        </a>
+        <img class="img" src="../assets/chevron.svg" />
+        <a href="home.html">
+          <div class="link"><div class="text">Checker</div></div>
+        </a>
+        <img class="img" src="../assets/chevron.svg" />
+        <div class="link"><div class="text-wrapper">Status</div></div>
+        <a href="history.html">
+          <div class="link"><div class="text">View History</div></div>
+        </a>
+      </div>
+    </div>
+    <h1 class="title" id="wordEl"></h1>
+    <h3 id="resultEl"></h3>
+    <script src="../backend/result.js"></script>
   </body>
 </html>

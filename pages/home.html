@@ -6,35 +6,50 @@
     <title>Home - Checker</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+
+    <script type="module" src="../backend/main.js"></script>
     <link rel="stylesheet" href="../styles/home.css" />
   </head>
   <body>
+    <div class="navbar breadcrumb">
+      <div style="display: flex; align-items: center">
+        <a href="load.html">
+          <img class="img" src="../assets/home.svg" />
+          <div class="link"><div class="text">Home</div></div>
+        </a>
+        <img class="img" src="../assets/chevron.svg" />
+        <div class="link"><div class="text-wrapper">Checker</div></div>
+      </div>
+      <a href="history.html">
+        <div class="link"><div class="text">View History</div></div>
+      </a>
+    </div>
     <div class="container">
       <div class="title">
         <h1>Palindrome Checker 1.0</h1>
       </div>
       <div class="input-container">
         <div class="form__group field">
+          <label for="name" class="form__label">Word</label>
           <input
             type="input"
             class="form__field"
-            placeholder="Name"
             name="name"
             id="inputEl"
             required
+            placeholder="radar"
+            
           />
-          <label for="name" class="form__label">Word</label>
+          <button type="button" id="clearBtn" class="clear-button"><img src="../assets/x.svg"></img></button>
         </div>
       </div>
+      <h2>Input the Palindrome</h2>
 
-      <button id="checkBtn" href="./result.html" class="button">Check</button>
+      <button id="checkBtn" class="button">
+        Check Word <image src="../assets/arrow.svg" />
+      </button>
 
-      <div class="title">
-        <h1 id="wordEl"></h1>
-      </div>
-
-      <h3 id="resultEl"></h3>
-    </div>
-    <script src="../backend/main.js"></script>
   </body>
 </html>
