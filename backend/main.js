@@ -1,7 +1,3 @@
-// const supabase = createClient(
-//   "https://hhkzlbvlibzznkazfuhd.supabase.co",
-//   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imhoa3psYnZsaWJ6em5rYXpmdWhkIiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTc2Njc5NjAsImV4cCI6MjAxMzI0Mzk2MH0.IAisboIx-XcEvf9Yd_hQatGMhsHyhPX-IO3riBoyo1U"
-// );
 document.getElementById("clearBtn").addEventListener("click", function () {
   document.getElementById("inputEl").value = "";
 });
@@ -19,11 +15,6 @@ function checkPalindrome(input) {
   }
   return true;
 }
-// async function addPalindrome(input) {
-//   const { error } = await supabase
-//     .from("palindromes")
-//     .insert({ id: 1, name: input });
-// }
 
 function main() {
   let inputEl = document.querySelector("#inputEl");
@@ -33,16 +24,10 @@ function main() {
     let isPalindrome = checkPalindrome(inputEl.value);
 
     if (isPalindrome) {
-      // setResults(inputEl.value);
-      // wordEl.innerHTML = "Word: " + inputEl.value;
-      // resultEl.innerHTML = "Status: Palindrome";
       localStorage.setItem(inputEl.value, "true");
-      // addPalindrome(inputEl.value);
       arr.push(inputEl.value);
       localStorage.setItem("Array", arr);
     } else {
-      // wordEl.innerHTML = "Word: " + inputEl.value;
-      // resultEl.innerHTML = "Status: Not a Palindrome";
       localStorage.setItem(inputEl.value, "false");
       arr.push(inputEl.value);
       localStorage.setItem("Array", arr);
